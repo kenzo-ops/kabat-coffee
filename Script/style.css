@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'questrial';
+}
+
+body {
+    background: rgb(86,28,36);
+    background: linear-gradient(90deg, rgba(86,28,36,1) 0%, rgba(109,41,50,1) 100%);
+    color: #E8D8C4;
+}
+
+nav {
+    display: flex;
+    transform: translateY(1rem);
+    align-items: center;
+    justify-content: space-around;
+    color: #E8D8C4;
+}
+
+nav .logo span{
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: #C7B7A3;
+}
+
+nav .center-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+nav .center-nav a {
+    text-decoration: none;
+}
+
+nav .center-nav li{
+    color: #E8D8C4;
+    list-style: none;
+}
+
+nav .right-nav {
+    gap: 2rem;
+    display: flex;
+}
+
+.land-first-page {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+}
+
+.land-first {
+    padding-left: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.land-first .msc {
+    display: flex;
+    padding-top: 2rem;
+}
+
+.land-first .sp {
+    font-size: 64px;
+    color: #C7B7A3;
+}
+
+.land-first h2 {
+    font-size: 64px;
+    color: #E8D8C4;
+}
+
+.land-first .det-p {
+    width: 50%;
+}
+
+.land-first a {
+    padding: 20px;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    border: solid #E8D8C4;
+    border-radius: 20px ;
+    color: #E8D8C4;
+    text-decoration: none;
+}
+
+.land-first-page .land-first .msc .msc-1 img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 35%;
+}
+
+.land-first-page img {
+    padding-right: 10rem;
+    width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
