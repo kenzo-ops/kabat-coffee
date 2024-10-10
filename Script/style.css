@@ -1,3 +1,5 @@
+/*layouting*/
+
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +13,11 @@ body {
     color: #E8D8C4;
 }
 
+/*Layouting*/
+
+
+/*navbar*/
+
 nav {
     display: flex;
     transform: translateY(1rem);
@@ -22,10 +29,12 @@ nav {
 nav .logo span{
     display: flex;
     flex-direction: column;
+    font-weight: normal
 }
 
 span {
     color: #C7B7A3;
+    font-weight: normal;
 }
 
 nav .center-nav {
@@ -48,12 +57,22 @@ nav .right-nav {
     display: flex;
 }
 
+nav .right-nav a {
+    color: #E8D8C4;
+    text-decoration: none;
+}
+
+/*Navbar*/
+
+
+/*Landing page first section*/
+
 .land-first-page {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding-top: 7rem;
+    padding-top: 10rem;
 }
 
 .land-first {
@@ -66,7 +85,11 @@ nav .right-nav {
 
 .land-first .msc {
     display: flex;
+    width: 100%;
+    transform: translateX(-40px);
     padding-top: 2rem;
+    text-align: center;
+    align-items: center;
 }
 
 .land-first .msc .msc-1 img {
@@ -76,24 +99,20 @@ nav .right-nav {
     width: 30%;
 }
 
-.land-first .sp {
-    font-size: 64px;
-    color: #C7B7A3;
-}
-
 .land-first h2 {
-    font-size: 64px;
+    font-size: 5rem;
+    font-weight: 900;
     color: #E8D8C4;
 }
 
 .land-first .det-p {
-    width: 50%;
+    width: 70%;
 }
 
 .land-first a {
     padding: 20px;
     display: flex;
-    width: 50%;
+    width: 70%;
     justify-content: center;
     align-items: center;
     border: solid #E8D8C4;
@@ -104,8 +123,126 @@ nav .right-nav {
 
 
 .land-first-page .coffee {
+    transform: translateY(-100px);
     padding-right: 10rem;
     width: 50%;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*Landing page first section*/
+
+
+/*Landing page second section*/
+
+.land-second-page {
+    display: flex;
+    width: 100%;
+}
+
+.land-second-page .left-side {
+    width: 50%;
+}
+
+.land-second-page .left-side img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 6/4;
+}
+
+.land-second-page .right-side {
+    display: flex;
+    background-color: #561C24;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    width: 50%;
+}
+
+.land-second-page .right-side .right-side-content {
+    width: 70%;
+}
+
+.land-second-page .right-side .right-side-content h2 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.land-second-page-2 {
+    display: flex;
+    width: 100%;
+}
+
+.land-second-page-2 .left-side-2 {
+    display: flex;
+    background-color: #561C24;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 50%;
+}
+
+.land-second-page-2 .left-side-2 .left-side-content {
+    width: 70%;
+}
+
+.land-second-page-2 .left-side-2 .left-side-content h2 {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+.land-second-page-2 .right-side-2 {
+    width: 50%;
+}
+
+.land-second-page-2 .right-side-2 img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 6/4;
+}
+
+/*Landing page second section*/
+
+
+/*Reviews section*/
+
+.reviews-wrapper {
+    background-color: #E8D8C4;
+}
+
+.reviews-wrapper .review-title {
+    text-align: center;
+    color: #6D2932;
+    text-decoration: underline;
+    text-decoration-color: #6D2932;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 3px;
+}
+
+.reviews-wrapper .review-box-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.reviews-wrapper .review-box-wrapper .review-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    background-color: #6D2932;
+}
+
+.reviews-wrapper .review-box-wrapper .review-box .review-box-content {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Reviews section*/
