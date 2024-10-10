@@ -69,6 +69,13 @@ nav .right-nav {
     padding-top: 2rem;
 }
 
+.land-first .msc .msc-1 img {
+    padding-bottom: 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30%;
+}
+
 .land-first .sp {
     font-size: 64px;
     color: #C7B7A3;
@@ -95,13 +102,8 @@ nav .right-nav {
     text-decoration: none;
 }
 
-.land-first-page .land-first .msc .msc-1 img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 35%;
-}
 
-.land-first-page img {
+.land-first-page .coffee {
     padding-right: 10rem;
     width: 50%;
     background-size: cover;
