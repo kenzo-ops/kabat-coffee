@@ -52,6 +52,14 @@ nav .center-nav li{
     list-style: none;
 }
 
+nav .center-nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #C7B7A3 ;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px ;
+    transition: 0.3s, 0.3s;
+}
+
 nav .right-nav {
     gap: 2rem;
     display: flex;
@@ -60,11 +68,14 @@ nav .right-nav {
 nav .right-nav a {
     color: #E8D8C4;
     text-decoration: none;
+    padding: 20px;
 }
 
 nav .right-nav a:hover {
-    background-color: #561C24;
-    transition: 0.5s 0.5s;
+    background-color: #E8D8C4;
+    font-weight: 700;
+    color: #6D2932;
+    transition: 0.5s, 0.5s;
 }
 
 /*Navbar*/
@@ -124,6 +135,13 @@ nav .right-nav a:hover {
     border-radius: 20px ;
     color: #E8D8C4;
     text-decoration: none;
+}
+
+.land-first a:hover {
+    background-color: #E8D8C4;
+    color: #6D2932;
+    transition: 0.3s, 0.3s;
+    box-shadow: 0 0 12px 3px #E8D8C4;
 }
 
 
@@ -284,7 +302,8 @@ nav .right-nav a:hover {
 footer {
     display: flex;
     flex-direction: column;
-    background: #C7B7A3;
+    background: rgb(199,183,163);
+    background: linear-gradient(90deg, rgba(199,183,163,1) 0%, rgba(232,216,196,1) 100%);
     color: #6D2932;
 }
 
