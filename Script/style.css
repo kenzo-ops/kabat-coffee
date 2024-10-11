@@ -10,6 +10,7 @@
 body {
     background: rgb(86,28,36);
     background: linear-gradient(90deg, rgba(86,28,36,1) 0%, rgba(109,41,50,1) 100%);
+    position: relative;
     color: #E8D8C4;
 }
 
@@ -19,17 +20,27 @@ body {
 /*navbar*/
 
 nav {
-    display: flex;
-    transform: translateY(1rem);
+    display: flex; 
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(90px);
     align-items: center;
     justify-content: space-around;
     color: #E8D8C4;
+   
+}
+
+nav .logo {
+    width: 33.3%;
+    display: flex; 
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav .logo span{
-    display: flex;
-    flex-direction: column;
-    font-weight: normal
+    font-weight: normal;
 }
 
 span {
@@ -38,9 +49,11 @@ span {
 }
 
 nav .center-nav {
+    width: 33.3%;
+    padding: 15px;
     display: flex;
-    justify-content: space-between;
-    gap: 4rem;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 nav .center-nav a {
@@ -61,14 +74,17 @@ nav .center-nav a:hover {
 }
 
 nav .right-nav {
+    width: 33.3%;
     gap: 2rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav .right-nav a {
     color: #E8D8C4;
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
 }
 
 nav .right-nav a:hover {
@@ -287,6 +303,11 @@ nav .right-nav a:hover {
     border-radius: 65px 0 65px;
     box-shadow: 0 0 12px 3px #6D2932;
     background-color: #6D2932;
+}
+
+.reviews-wrapper .review-box-wrapper .review-box .review-box-content:hover {
+    transform: translateY(-45px);
+    transition: 0.3s, 0.3s;
 }
 
 .reviews-wrapper .review-box-wrapper .review-box .review-box-content h2 {

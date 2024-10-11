@@ -1,0 +1,104 @@
+/*Layouting*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'questrial';
+}
+
+body {
+    background: rgb(86,28,36);
+    background: linear-gradient(90deg, rgba(86,28,36,1) 0%, rgba(109,41,50,1) 100%);
+    color: #E8D8C4;
+}
+
+/*Layouting*/
+
+/*navbar*/
+
+nav {
+    display: flex; 
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    backdrop-filter: blur(90px);
+    align-items: center;
+    justify-content: space-around;
+    color: #E8D8C4;
+   
+}
+
+nav .logo {
+    width: 33.3%;
+    display: flex; 
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .logo span{
+    font-weight: normal;
+}
+
+span {
+    color: #C7B7A3;
+    font-weight: normal;
+}
+
+nav .center-nav {
+    width: 33.3%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+nav .center-nav a {
+    text-decoration: none;
+}
+
+nav .center-nav li{
+    color: #E8D8C4;
+    list-style: none;
+}
+
+nav .center-nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #C7B7A3 ;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px ;
+    transition: 0.3s, 0.3s;
+}
+
+nav .right-nav {
+    width: 33.3%;
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .right-nav a {
+    color: #E8D8C4;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav .right-nav a:hover {
+    background-color: #E8D8C4;
+    font-weight: 700;
+    color: #6D2932;
+    transition: 0.5s, 0.5s;
+}
+
+/*Navbar*/
+
+
+/*Promo*/
+
+.promo-wrapper {
+    padding-top: 5rem;
+}
+
+/*Promo*/
