@@ -62,6 +62,11 @@ nav .right-nav a {
     text-decoration: none;
 }
 
+nav .right-nav a:hover {
+    background-color: #561C24;
+    transition: 0.5s 0.5s;
+}
+
 /*Navbar*/
 
 
