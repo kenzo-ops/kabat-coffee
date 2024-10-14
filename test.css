@@ -106,52 +106,18 @@ nav .right-nav a:hover {
 
 /*Menu*/
 
-.menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 12px;
-    background-color: #561C24;
-}
 
-.menu-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-wrapper .menu-title {
-    padding: 20px;
-}
-
-.menu-wrapper .menu-title h2 {
-    font-size: 2.5rem;
-}
-
-.decor {
-    background: #E8D8C4;
-    width: 10%;
-    height: 5px;
-}
-
-.filter-buttons {
-    display: flex;
-    padding-top: 2rem;
-    padding: 20px;
-    gap: 20px;
-}
 
 .filter-buttons button {
     border: none;
+    border-radius: 12px;
     background: #6D2932;
     color: #E8D8C4;
-    border-radius: 9px;
     padding: 12px;
 }
 
-.filter-buttons .activer {
+.filter-buttons .active {
     background : #E8D8C4;
-    font-weight: 900;
     color: #561C24;
 }
 
@@ -161,9 +127,7 @@ nav .right-nav a:hover {
     width: 100%;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 5rem;
-    padding-top: 1.5rem;
+    padding-top: 7rem;
 }
 
 .filtered-card .carda {
@@ -173,51 +137,33 @@ nav .right-nav a:hover {
     width: 31%;
 }
 
-.filtered-card .carda:hover {
-    box-shadow: 0 0 15px 4px #C7B7A3;
-    transition: 0.4s, 0.4s;
-}
-
-.carda.hide {
-    display: none;
-}
-
-.filtered-card .carda .card-text h2 {
+.card-text h2 {
     font-size: 2.5rem;
     font-weight: 900;
 }
 
-.filtered-card .carda .card-body {
+.card-body {
+    display: flex;
     width: 100%;
-    display: flex;
+    padding: 32px;
     flex-direction: column;
-    justify-content: space-around;
-}
-
-.card-body .card-text {
-    display: flex;
-    padding: 33px;
-    flex-direction: column;
-    gap: 25px;
     justify-content: space-between;
-    width: 100%;
 }
 
-.filtered-card .carda .card-body .card-text button {
+.card-text {
+    width: 75%;
+}
+
+ .card-text button {
     padding: 10px;
     width: 100%;
     border: solid #C7B7A3;
+    border-radius: 13px;
     color: #C7B7A3;
     background: none;
 }
 
-.filtered-card .carda .card-body .card-text button:focus {
-    background: #C7B7A3;
-    color: #6D2932;
-    transition: 0.3s, 0.3s;
-}
-
- .filtered-card .carda img {
+ .carda img {
     width: 50%;
     height: auto;
     object-fit: cover;
