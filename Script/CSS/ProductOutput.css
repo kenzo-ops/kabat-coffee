@@ -1,0 +1,47 @@
+* {
+    font-family: 'questrial';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(86,28,36,1) 0%, rgba(109,41,50,1) 100%);
+    color: #E8D8C4;
+    align-items: center;
+}
+
+h1 span {
+    color: #C7B7A3;
+    font-weight: normal;
+}
+
+h1 {
+    color: #E8D8C4;
+    font-weight: 900;
+}
+
+.output {
+    margin-top: 1vh;
+    padding: 2vh;
+    background: rgba( 255, 255, 255, 0.25 );
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 0 12px 2px #E8D8C4;
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid #E8D8C4;
+    display: flex;
+    gap: 2vh;
+    width: auto;
+    flex-direction: column;
+}
+
+.output .container {
+    padding: 3vh;
+    border: 1px solid #E8D8C4;
+}
+
+.output .container h3 {
+    font-weight: normal;
+}
