@@ -19,8 +19,11 @@ require "../Config/Config.php";
         <h1>List Produk</h1>
         <h2>Kabat<span>Coffee</span></h2>
     </div>
+    <div class="btn">
+          <button class="hapus">Delete</button>
+    <button class="tambah" onclick="location.href = 'InputForm.php';">Tambah</button>  
+    </div>
 
-    <button class="tambah" onclick="location.href = 'InputForm.php';">Tambah</button>
     </div>
    
         
@@ -35,6 +38,7 @@ require "../Config/Config.php";
                 <table>
                     <div class="gp">
                     <tr class = "title">
+                        <th>Select</th>
                         <th>No.</th>
                         <th>Nama</th>
                         <th>Harga</th>
@@ -52,6 +56,7 @@ require "../Config/Config.php";
                             font-size: 2vh;
                             padding: 2vh;
                         }
+                        
 
                         th {
                             text-align: left;
@@ -64,6 +69,7 @@ backdrop-filter: blur(7.7px);
                         
                     </style>
                     <tr>
+                        <td><input type="checkbox" name="selected"></td>
                         <td><?= $no ?></td>
                         <td><?= $data['product_name']; ?></td>
                         <td>Rp.<?= $data['price']; ?></td>
