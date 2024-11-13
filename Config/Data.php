@@ -4,7 +4,7 @@ ini_set('display_errors',0);
 require_once "../Config/Config.php";
 
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_POST['kirim']) {
     if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
 
         echo "<script>alert('File Berhasil Di Upload');</script>";
@@ -34,9 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             echo "Unsupported file type.";
         }
-    } else {
-        echo "Error uploading file.";
-    }
+    } 
     
     $data = [
     'nama' => $name,

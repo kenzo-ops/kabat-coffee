@@ -54,10 +54,9 @@ input::-webkit-inner-spin-button {
 }
 
 
-
-form button {
+form input[type='submit'] {
     font-family: 'questrial';
-    margin-top: 3vh;
+    margin-top: 2vh;
     padding: 2vh;
     color: #E8D8C4;
     background: none;
@@ -65,13 +64,14 @@ form button {
 }
 
 
-form button:hover {
+form input[type='submit']:hover {
     background: #E8D8C4;
     color: #6D2932;
+    transition: 0.3s;
     box-shadow: 0 0 7px 1px #E8D8C4;
 }
 
-form button:focus{
+form input[type='submit']:focus{
     background: #E8D8C4;
     color: #6D2932;
 }
@@ -84,4 +84,8 @@ h1 {
 h1 span {
     color: #C7B7A3;
     font-weight: normal;
+}
+
+h2 {
+    transform: translateY(-4vh);
 }

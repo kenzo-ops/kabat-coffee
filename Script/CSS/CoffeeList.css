@@ -39,6 +39,13 @@ body {
 h2 {
     transform: translateY(-5vh);
 }
+form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .container .btn {
     display: flex;
@@ -89,10 +96,28 @@ width: 75%;
 background: rgba(44, 24, 220, 0.19);
 backdrop-filter: blur(7.7px);
 -webkit-backdrop-filter: blur(7.7px);
+text-align: center;
 border: 1px solid rgba(44, 24, 220, 0.3);
 }
 
 table th {
-    text-align: left;
+    text-align: center;
     width: 100vh;
+}
+
+.edit{
+    text-align: right;
+    background:  rgba(0, 166, 255, 0.516);
+    border: none;
+    box-shadow: none;
+    color: white;
+    font-weight:600;
+    height: 25%;
+    padding: 2vh;
+}
+
+.edit:hover {
+    cursor: pointer;
+    background:  rgb(0, 166, 255);
+    transition: 0.3s;
 }

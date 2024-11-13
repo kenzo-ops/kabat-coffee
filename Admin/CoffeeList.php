@@ -1,5 +1,17 @@
 <?php 
 require "../Config/Config.php";
+
+ 
+if (isset($_POST["delete"]) && isset($_POST["selected_id"])) {
+ foreach($_POST["selected_id"] as $ids) {
+  $delete = "DELETE  FROM product WHERE product.id = $ids";
+  mysqli_query($koneksi, $delete);
+  break;
+       }
+}
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,14 +26,16 @@ require "../Config/Config.php";
     <link rel="stylesheet" href="../Script/CSS/CoffeeList.css">
 </head>
 <body>
+    <form action="" method="POST">
     <div class="container">
          <div class="titleu">
         <h1>List Produk</h1>
         <h2>Kabat<span>Coffee</span></h2>
-    </div>
+    </div> 
+    
     <div class="btn">
-          <button class="hapus">Delete</button>
-    <button class="tambah" onclick="location.href = 'InputForm.php';">Tambah</button>  
+    <button class="hapus" name="delete">Hapus</button>
+     <button class="tambah" onclick="location.href = 'InputForm.php';">Tambah</button>
     </div>
 
     </div>
@@ -43,6 +57,7 @@ require "../Config/Config.php";
                         <th>Nama</th>
                         <th>Harga</th>
                         <th>Kategori</th>
+                        <th>Edit</th>
                     </tr>
                     <?php 
                     $no = 1; 
@@ -59,7 +74,7 @@ require "../Config/Config.php";
                         
 
                         th {
-                            text-align: left;
+                            text-align: center;
                             padding: 2vh;
                             background: rgba(0, 0, 0, 0.19);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -69,12 +84,12 @@ backdrop-filter: blur(7.7px);
                         
                     </style>
                     <tr>
-                        <td><input type="checkbox" name="selected"></td>
+                        <td><input type="checkbox" name="selected_id[]" value="<?= $data['id'] ?>"></td>
                         <td><?= $no ?></td>
                         <td><?= $data['product_name']; ?></td>
                         <td>Rp.<?= $data['price']; ?></td>
                         <td><?= $data['category_name']; ?></td>
-
+                        <td><button class="edit">Edit</button></td>
                     </tr>
                     <?php 
                        $no ++;
@@ -83,7 +98,9 @@ backdrop-filter: blur(7.7px);
                     ?>
                     </div>
                 </table>
-                <?php } ?>
-    
+                <?php } 
+               ?>
+                </form> 
+
 </body>
 </html>

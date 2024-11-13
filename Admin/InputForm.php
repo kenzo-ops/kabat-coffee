@@ -32,7 +32,7 @@ ini_set('display_errors',0);
         <input type="number" name="price">
         <label for="">ID of the Category</label>
         <input type="number" name="category">
-        <button>Submit</button>
+        <input type="submit" value="Kirim" placeholder="Kirim" name="kirim">
     </form>
 </body>
 
