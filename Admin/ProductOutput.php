@@ -1,46 +1,5 @@
-<?php
-error_reporting(0);
-ini_set('display_errors',0);
-
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Check if the file was uploaded without errors
-    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
-
-        echo "<script>alert('File Berhasil Di Upload');</script>";
-
-        $name = $_POST['name'];
-        $desc = $_POST['desc'];
-        $price = $_POST['price'];
-        $category = $_POST['category'];
-
-        $fileTmpPath = $_FILES['image']['tmp_name'];
-        $fileName = $_FILES['image']['name'];
-        $fileSize = $_FILES['image']['size'];
-        $fileType = $_FILES['image']['type'];
-        
-        // Define allowed file types
-        $allowedTypes = ['image/jpeg', 'image/png', 'image/gif'];
-        
-        if (in_array($fileType, $allowedTypes)) {
-            // Specify the target directory for uploads
-            $uploadDir = 'uploads/';
-            $destinationPath = $uploadDir . basename($fileName);
-            
-            // Move the uploaded file to the destination directory
-            if (move_uploaded_file($fileTmpPath, $destinationPath)) {
-            } else {
-                echo "Error moving the uploaded file.";
-            }
-
-            
-        } else {
-            echo "Unsupported file type.";
-        }
-    } else {
-        echo "Error uploading file.";
-    }
-}
+<?php 
+    require_once "../Config/Config.php";
 ?>
 
 <!DOCTYPE html>
@@ -64,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h2>Nama Produk :</h2>
     <h3>
         <?php 
-            echo $name;
+             echo $name;
         ?>
     </h3>    
     </div>
@@ -72,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <h2>Deskripsi :</h2>
     <h3>
         <?php 
-            echo $desc;
+             echo $desc;
         ?>
     </h3>    
     </div>
@@ -94,15 +53,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  <h2>Gambar Produk :</h2>
     <h1>
         <?php 
-              echo "<img src='$destinationPath' alt='failed' style='max-width: 400px;'>";
+              echo "<img src='$destinationPath' alt='gagal' style='max-width: 400px;'>";
         ?>
     </h1>
     </div>
-    
-   
-    
-   
-   
-    </div>
+</div>
 </body>
 </html>
