@@ -14,10 +14,15 @@ require "../Config/Config.php";
     <link rel="stylesheet" href="../Script/CSS/CoffeeList.css">
 </head>
 <body>
-    <div class="titleu">
+    <div class="container">
+         <div class="titleu">
         <h1>List Produk</h1>
         <h2>Kabat<span>Coffee</span></h2>
     </div>
+
+    <button class="tambah" onclick="location.href = 'InputForm.php';">Tambah</button>
+    </div>
+   
         
                 <?php 
                     $kopi = viewKopi($koneksi);
